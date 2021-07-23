@@ -67,3 +67,7 @@ button.remove:after {
     line-height: 15px;
     text-align: center;
 }
+.tags-input::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+}
