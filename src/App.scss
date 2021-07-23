@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  
+	display: block;
+	margin-top:2rem;
+	margin-left:1rem;
+	position: relative;
+	background: rgb(255, 255, 255);
+	background-size: cover;
+  	align-items: center;
+	background-position: center;
+	background-repeat: no-repeat !important;
+	width: 85%;
+	max-width: 400px;
+	height: 200px;
+	box-shadow: 4px 8px 28px rgba(39,44,49,.1), 1px 3px 8px rgba(39,44,49,.075);
+	//margin: 15vh auto;
+   	padding-top: 8rem;
+	overflow: hidden !important;
+	&:hover {
+		box-shadow: 0 0 1px rgba(39,44,49,.2), 0 3px 16px rgba(39,44,49,.25);
+		transform: translate3D(0,-.5px,0);
+	}
+	.content-mask {
+		// position: fixed;
+		display: inline-block;
+		background: rgba(#fff, 0.9);
+		width: 61%;
+		height: 100%;
+		padding: 0.75em 0 0.75em 2.5em;
+		overflow: hidden;
+		z-index: 5;
+	}
+	.horizontal {
+		display: inline-block;
+		position: relative;
+		background: linear-gradient(to top right, rgba(#fff, 0.9) 50%, transparent 0);
+		height: 101%;
+		width: 20%;
+		top: -5%;
+		// left: -0.4vw;
+		right: 0.8%;
+		overflow: hidden;
+	}
+}
+

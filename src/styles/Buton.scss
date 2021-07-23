@@ -1,0 +1,52 @@
+.onoffswitch-switch {
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin: 8px;
+    background: #E74C3C;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 73px;
+    border: 0px;
+    border-radius: 20px;
+    transition: all 0.3s ease 0s;
+    margin-top: 0.7rem;
+}
+
+.onoffswitch-label {
+    display: block;
+  //  overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    /* border: 1px solid #3b4251; */
+    border-radius: 4px;
+    /* border-radius: 20px; */
+    height: 34px;
+}
+
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease 0s;
+}
+.onoffswitch {
+    position: relative;
+    width: 114px;
+    -webkit-user-select: none;
+    display: inline-flex;
+    
+}
+
+.checkstatus {
+    color: #414141;
+    border: 1px;
+    margin-left: 2rem;
+    font-weight: 700;
+    padding-top: 0.6rem;
+    margin-right: 0.5rem;
+    border-radius:20px;
+    padding:0.5rem;
+    
+}
